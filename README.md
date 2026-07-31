@@ -1,2 +1,0 @@
-# louis-portfolio
-My portfolio
