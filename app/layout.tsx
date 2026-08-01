@@ -1,3 +1,4 @@
+import NeonCursor from "@/components/ui/neon-cursor";
 import type { Metadata } from "next";
 import { Instrument_Serif, Inter } from "next/font/google";
 import "./globals.css";
@@ -29,7 +30,10 @@ export default function RootLayout({
       lang="fr"
       className={`${instrument.variable} ${inter.variable} h-full antialiased`}
     >
-      <body className="min-h-full">{children}</body>
+      <body className="min-h-full">
+        {children}
+        <NeonCursor />
+      </body>
     </html>
   );
 }

@@ -1,6 +1,6 @@
 import CrystalTrailBackground from "@/components/ui/crystal-trail-background";
 
-export default function DemoOne() {
+export default function Hero() {
   const glow = "0 0 5px #c084fc, 0 0 10px #c084fc";
   return (
     <main>
@@ -14,12 +14,27 @@ export default function DemoOne() {
               Louis Cornu
             </h1>
             <h2 className="m-0 mt-2 font-sans uppercase tracking-[.2em] text-lg sm:text-2xl text-purple-200/70">
-              Développeur Full Stack
+              Développeur Web Full Stack
             </h2>
           </div>
-          <p className="absolute bottom-10 text-purple-200/40 text-sm px-4 font-mono">
-            Passionné par la création d&apos;expériences web élégantes
-          </p>
+          <a
+            href="#about"
+            aria-label="Découvrir la section à propos"
+            className="absolute bottom-15 flex flex-col items-center gap-3 px-4 text-sm font-mono text-purple-200/40 transition-colors hover:text-purple-200"
+          >
+            <svg
+              aria-hidden="true"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 24 24"
+              fill="none"
+              strokeWidth="3"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              className="size-10 animate-bounce stroke-emerald-300 drop-shadow-[0_0_10px_rgba(52,211,153,0.5)]"
+            >
+              <path d="m6 9 6 6 6-6" />
+            </svg>
+          </a>
         </div>
       </CrystalTrailBackground>
     </main>
